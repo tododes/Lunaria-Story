@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunaria Story.CSharp", "Lunaria Story.CSharp.csproj", "{9232E356-803F-11AB-8964-3506C610A164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunaria Story.CSharp.Plugins", "Lunaria Story.CSharp.Plugins.csproj", "{A16D881F-FCC3-9F56-5F7D-C11B5E6D185F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunaria Story.CSharp.Editor.Plugins", "Lunaria Story.CSharp.Editor.Plugins.csproj", "{4E968E48-11E5-6916-E8CC-47FA3A51C72A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9232E356-803F-11AB-8964-3506C610A164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9232E356-803F-11AB-8964-3506C610A164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9232E356-803F-11AB-8964-3506C610A164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9232E356-803F-11AB-8964-3506C610A164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A16D881F-FCC3-9F56-5F7D-C11B5E6D185F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A16D881F-FCC3-9F56-5F7D-C11B5E6D185F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A16D881F-FCC3-9F56-5F7D-C11B5E6D185F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A16D881F-FCC3-9F56-5F7D-C11B5E6D185F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E968E48-11E5-6916-E8CC-47FA3A51C72A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E968E48-11E5-6916-E8CC-47FA3A51C72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E968E48-11E5-6916-E8CC-47FA3A51C72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E968E48-11E5-6916-E8CC-47FA3A51C72A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
