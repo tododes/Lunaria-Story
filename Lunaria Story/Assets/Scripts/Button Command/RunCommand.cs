@@ -3,26 +3,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RunCommand : ICommand
+public class RunCommand : PlayerControlCommand
 {
-    private Character character;
     private float facingAngle;
 
-    public RunCommand(Character character, float facingAngle) {
-        this.character = character;
+    public RunCommand(Character character, float facingAngle) : base(character) {
         this.facingAngle = facingAngle;
     }
 
-    public void OnExecute(){
-        
+    protected override void OnExecutePlayerControlCommand()
+    {
+    
     }
 
-    public void OnStartExecute(){
+    protected override void OnStartExecutePlayerControlCommand()
+    {
         character.setFacingAngle(facingAngle);
         character.run();
     }
 
-    public void OnStopExecute(){
+    protected override void OnStopExecutePlayerControlCommand()
+    {
         character.doNothing();
     }
 }

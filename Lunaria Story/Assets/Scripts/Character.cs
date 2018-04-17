@@ -12,14 +12,17 @@ public class Attribute {
 public class Character : MonoBehaviour {
 
     [SerializeField] private Attribute attribute;
-    [SerializeField] private Checkpoint lastCheckpoint;
 
+    private Checkpoint lastCheckpoint;
     private IState currentState;
     private Rigidbody2D body;
+    private List<ICharacterObserver> observers = new List<ICharacterObserver>();
+    private bool controllable;
     
 	void Start () {
         idle();
         body = GetComponent<Rigidbody2D>();
+        registerObserver(GameObject.Find("UI System").GetComponent<GameUIGroup>());
 	}
 
 	void FixedUpdate () {
@@ -69,7 +72,8 @@ public class Character : MonoBehaviour {
     }
 
     public void die() {
-
+        DieNotificationToObservers();
+        setCurrentState(new DieState(this));
     }
 
     public void setFacingAngle(float angle) {
@@ -78,5 +82,27 @@ public class Character : MonoBehaviour {
 
     public void setRecentlyReachedCheckpoint(Checkpoint lastCheckpoint) {
         this.lastCheckpoint = lastCheckpoint;
+    }
+
+    public void registerObserver(ICharacterObserver observer) {
+        observers.Add(observer);
+    }
+
+    private void DieNotificationToObservers() {
+        for (int i = 0; i < observers.Count; i++) {
+            observers[i].OnCharacterDie(this);
+        }
+    }
+
+    public void enablePlayerController() {
+        controllable = true;
+    }
+
+    public void disablePlayerController() {
+        controllable = false;
+    }
+
+    public bool isControllable() {
+        return controllable;
     }
 }

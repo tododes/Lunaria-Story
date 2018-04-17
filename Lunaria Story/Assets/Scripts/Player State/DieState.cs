@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class DieState : IState
 {
+    private Character character;
     private Animator animator;
 
     public DieState(Character character) {
+        this.character = character;
         animator = character.GetComponent<Animator>();
     }
 
@@ -15,9 +17,10 @@ public class DieState : IState
         
     }
 
-    public void startAction()
-    {
-        
+    public void startAction() {
+        Handheld.Vibrate();
+        animator.SetBool("isDead", true);
+        character.disablePlayerController();
     }
 
     public void stopAction() {

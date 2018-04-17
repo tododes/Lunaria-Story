@@ -9,8 +9,10 @@ public class JumpState : IState
     private Rigidbody2D body;
     private bool isJumping;
     private Animator animator;
+    private Character character;
 
     public JumpState(Character character, float force) {
+        this.character = character;
         this.force = force;
         body = character.GetComponent<Rigidbody2D>();
         animator = character.GetComponent<Animator>();
@@ -29,5 +31,6 @@ public class JumpState : IState
         animator.SetTrigger("Jump");
         body.AddForce(Vector3.up * force);
         isJumping = true;
+        character.enablePlayerController();
     }
 }

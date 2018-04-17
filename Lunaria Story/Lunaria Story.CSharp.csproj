@@ -315,11 +315,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Button Command\ChangeMenuCommand.cs" />
     <Compile Include="Assets\Scripts\Button Command\ICommand.cs" />
     <Compile Include="Assets\Scripts\Button Command\JumpCommand.cs" />
+    <Compile Include="Assets\Scripts\Button Command\PlayerControlCommand.cs" />
     <Compile Include="Assets\Scripts\Button Command\Remote\CommandButton.cs" />
     <Compile Include="Assets\Scripts\Button Command\Remote\IRemote.cs" />
-    <Compile Include="Assets\Scripts\Button Command\Remote\UISystem.cs" />
+    <Compile Include="Assets\Scripts\Button Command\Remote\UIRemote.cs" />
     <Compile Include="Assets\Scripts\Button Command\RunCommand.cs" />
     <Compile Include="Assets\Scripts\Character Observer\ICharacterObserver.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
@@ -330,12 +332,25 @@
     <Compile Include="Assets\Scripts\Interactible\Interactible Strategy\KillingBehaviour.cs" />
     <Compile Include="Assets\Scripts\Interactible\Interactible.cs" />
     <Compile Include="Assets\Scripts\Interactible\Spike.cs" />
+    <Compile Include="Assets\Scripts\MainMenuController.cs" />
+    <Compile Include="Assets\Scripts\Moving UI\CheckpointText.cs" />
+    <Compile Include="Assets\Scripts\Moving UI\DieText.cs" />
+    <Compile Include="Assets\Scripts\Moving UI\Moving Strategy\DropBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Moving UI\Moving Strategy\IDisplayBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Moving UI\Moving Strategy\InflateDeflateBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Moving UI\Moving Strategy\NullBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Moving UI\MovingUI.cs" />
     <Compile Include="Assets\Scripts\Player State\DieState.cs" />
     <Compile Include="Assets\Scripts\Player State\IdleState.cs" />
     <Compile Include="Assets\Scripts\Player State\IState.cs" />
     <Compile Include="Assets\Scripts\Player State\JumpState.cs" />
     <Compile Include="Assets\Scripts\Player State\NullState.cs" />
     <Compile Include="Assets\Scripts\Player State\RunState.cs" />
+    <Compile Include="Assets\Scripts\Stack\Stack.cs" />
+    <Compile Include="Assets\Scripts\UI System\GameUIGroup.cs" />
+    <Compile Include="Assets\Scripts\UI System\MainMenuUIGroup.cs" />
+    <Compile Include="Assets\Scripts\UI System\MenuUIGroup.cs" />
+    <Compile Include="Assets\Scripts\UI System\OptionUIGroup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />

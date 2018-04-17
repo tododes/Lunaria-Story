@@ -3,25 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumpCommand : ICommand
+public class JumpCommand : PlayerControlCommand
 {
-    private Character character;
 
-    public JumpCommand(Character character) {
-        this.character = character;
+    public JumpCommand(Character character) : base(character) {
+
     }
 
-    public void OnExecute()
+    protected override void OnExecutePlayerControlCommand()
     {
        
     }
 
-    public void OnStartExecute()
+    protected override void OnStartExecutePlayerControlCommand()
     {
         character.jump();
     }
 
-    public void OnStopExecute()
+    protected override void OnStopExecutePlayerControlCommand()
     {
         
     }

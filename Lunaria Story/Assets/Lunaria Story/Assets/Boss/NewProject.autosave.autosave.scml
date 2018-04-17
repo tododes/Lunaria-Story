@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r11">
+    <folder id="0">
+        <file id="0" name="Shaman Body.png" width="1968" height="2133" pivot_x="0.5" pivot_y="0.5"/>
+        <file id="1" name="Wand and Hand.png" width="600" height="1856" pivot_x="0.666667" pivot_y="0.519313"/>
+        <file id="2" name="Fireball.png" width="220" height="124" pivot_x="0" pivot_y="1"/>
+    </folder>
+    <entity id="0" name="entity_000">
+        <animation id="0" name="Idle" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="299">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="499">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                </key>
+                <key id="3" time="693">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                </key>
+                <key id="4" time="895">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="4" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Shaman Body">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="495.666667" y="31.222222" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Wand and Hand">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="77.727273" y="64.343434" angle="0"/>
+                </key>
+                <key id="1" time="299" spin="0">
+                    <object folder="0" file="1" x="72.171717" y="103.232323" angle="0"/>
+                </key>
+                <key id="2" time="499" spin="0">
+                    <object folder="0" file="1" x="77.20503" y="23.171545" angle="0"/>
+                </key>
+                <key id="3" time="693" spin="0">
+                    <object folder="0" file="1" x="63.614152" y="47.735042" angle="0"/>
+                </key>
+                <key id="4" time="895" spin="0">
+                    <object folder="0" file="1" x="79.94415" y="-23.09922" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="1" name="Dead" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="502">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="942">
+                    <object_ref id="0" timeline="0" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Shaman Body">
+                <key id="0">
+                    <object folder="0" file="0" x="495.666667" y="31.222222" angle="0"/>
+                </key>
+                <key id="1" time="502">
+                    <object folder="0" file="0" x="495.666667" y="31.222222" angle="53.592282"/>
+                </key>
+                <key id="2" time="942" spin="-1">
+                    <object folder="0" file="0" x="606.192983" y="41.748538" angle="85.241043"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Wand and Hand">
+                <key id="0">
+                    <object folder="0" file="1" x="77.727273" y="64.343434" angle="0"/>
+                </key>
+                <key id="1" time="502">
+                    <object folder="0" file="1" x="61.937799" y="-214.603934" angle="30.744701" scale_y="1"/>
+                </key>
+                <key id="2" time="942" spin="-1">
+                    <object folder="0" file="1" x="734.575719" y="-536.597171" angle="81.485419" scale_y="1"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="2" name="Hurt" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="943">
+                    <object_ref id="0" timeline="0" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Shaman Body">
+                <key id="0">
+                    <object folder="0" file="0" x="774.614035" y="110.16959" angle="347.300361" scale_x="1"/>
+                </key>
+                <key id="1" time="943" spin="-1">
+                    <object folder="0" file="0" x="495.666667" y="31.222222" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Wand and Hand">
+                <key id="0">
+                    <object folder="0" file="1" x="325.095694" y="222.238171" angle="342.955386" scale_y="1"/>
+                </key>
+                <key id="1" time="943" spin="-1">
+                    <object folder="0" file="1" x="77.727273" y="64.343434" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="3" name="Walk" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+                <key id="1" time="299">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                </key>
+                <key id="2" time="793">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="4" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Shaman Body">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="495.666667" y="31.222222" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Wand and Hand">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="115.559753" y="68.399554" angle="0"/>
+                </key>
+                <key id="1" spin="0">
+                    <object folder="0" file="1" x="77.727273" y="64.343434" angle="0"/>
+                </key>
+                <key id="2" time="299" spin="0">
+                    <object folder="0" file="1" x="14.569378" y="185.396066" pivot_x="0.666667" pivot_y="0.519313" angle="0"/>
+                </key>
+                <key id="3" time="299" spin="0">
+                    <object folder="0" file="1" x="52.401858" y="189.452186" pivot_x="0.729721" pivot_y="0.521498" angle="0"/>
+                </key>
+                <key id="4" time="793" spin="0">
+                    <object folder="0" file="1" x="39.112572" y="-3.497735" pivot_x="0.729721" pivot_y="0.521498" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="4" name="Attack" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="201">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="503">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                </key>
+                <key id="3" time="737">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Shaman Body">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="495.666667" y="31.222222" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Wand and Hand">
+                <key id="0" spin="-1">
+                    <object folder="0" file="1" x="77.727273" y="64.343434" angle="0"/>
+                </key>
+                <key id="1" time="201">
+                    <object folder="0" file="1" x="77.516911" y="118.5925" angle="354.265833"/>
+                </key>
+                <key id="2" time="503">
+                    <object folder="0" file="1" x="44.235707" y="96.815718" angle="25.154282"/>
+                </key>
+                <key id="3" time="737" spin="-1">
+                    <object folder="0" file="1" x="42.713808" y="73.671725" angle="69.775323"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="5" name="ChargingStrikeLaser" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="201">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="396">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="2" z_index="1"/>
+                </key>
+                <key id="3" time="1000">
+                    <object_ref id="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="1" key="3" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Shaman Body">
+                <key id="0" spin="0">
+                    <object folder="0" file="0" x="495.666667" y="31.222222" angle="0"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Wand and Hand">
+                <key id="0" spin="-1">
+                    <object folder="0" file="1" x="77.727273" y="64.343434" angle="0"/>
+                </key>
+                <key id="1" time="201" spin="-1">
+                    <object folder="0" file="1" x="77.516911" y="118.5925" angle="354.265833"/>
+                </key>
+                <key id="2" time="396" spin="-1">
+                    <object folder="0" file="1" x="73.022796" y="187.170922" angle="333.167571"/>
+                </key>
+                <key id="3" time="1000">
+                    <object folder="0" file="1" x="76.146132" y="285.624858" angle="331.188366"/>
+                </key>
+            </timeline>
+        </animation>
+        <animation id="6" name="ReleaseStrikeLaser" length="2000" interval="100">
+            <mainline>
+                <key id="0">
+                    <object_ref id="0" timeline="1" key="0" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="0" z_index="1"/>
+                </key>
+                <key id="1" time="196">
+                    <object_ref id="0" timeline="1" key="1" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="1" z_index="1"/>
+                </key>
+                <key id="2" time="401">
+                    <object_ref id="0" timeline="1" key="2" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="2" z_index="1"/>
+                </key>
+                <key id="3" time="479">
+                    <object_ref id="0" timeline="1" key="3" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="3" z_index="1"/>
+                </key>
+                <key id="4" time="524">
+                    <object_ref id="0" timeline="1" key="4" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="4" z_index="1"/>
+                </key>
+                <key id="5" time="590">
+                    <object_ref id="0" timeline="1" key="5" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="5" z_index="1"/>
+                </key>
+                <key id="6" time="613">
+                    <object_ref id="0" timeline="1" key="6" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="6" z_index="1"/>
+                </key>
+                <key id="7" time="647">
+                    <object_ref id="0" timeline="1" key="7" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="7" z_index="1"/>
+                </key>
+                <key id="8" time="697">
+                    <object_ref id="0" timeline="1" key="8" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="8" z_index="1"/>
+                </key>
+                <key id="9" time="726">
+                    <object_ref id="0" timeline="1" key="9" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="9" z_index="1"/>
+                </key>
+                <key id="10" time="760">
+                    <object_ref id="0" timeline="1" key="10" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="10" z_index="1"/>
+                </key>
+                <key id="11" time="853">
+                    <object_ref id="0" timeline="1" key="10" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="11" z_index="1"/>
+                </key>
+                <key id="12" time="1000">
+                    <object_ref id="0" timeline="1" key="10" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="12" z_index="1"/>
+                </key>
+                <key id="13" time="1101">
+                    <object_ref id="0" timeline="1" key="10" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="13" z_index="1"/>
+                </key>
+                <key id="14" time="1497">
+                    <object_ref id="0" timeline="1" key="10" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="14" z_index="1"/>
+                </key>
+                <key id="15" time="1887">
+                    <object_ref id="0" timeline="1" key="10" z_index="0"/>
+                    <object_ref id="1" timeline="0" key="15" z_index="1"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="Wand and Hand">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="31.49319" y="305.293755" pivot_x="0.589887" pivot_y="0.514519" angle="331.188366"/>
+                </key>
+                <key id="1" time="196" spin="0">
+                    <object folder="0" file="1" x="5.177401" y="326.346387" pivot_x="0.589887" pivot_y="0.514519" angle="331.188366"/>
+                </key>
+                <key id="2" time="401" spin="0">
+                    <object folder="0" file="1" x="101.360957" y="247.294279" pivot_x="0.589887" pivot_y="0.514519" angle="331.188366"/>
+                </key>
+                <key id="3" time="479" spin="0">
+                    <object folder="0" file="1" x="8.052457" y="307.478378" pivot_x="0.589887" pivot_y="0.514519" angle="331.188366"/>
+                </key>
+                <key id="4" time="524" spin="0">
+                    <object folder="0" file="1" x="99.550773" y="244.131792" pivot_x="0.589887" pivot_y="0.514519" angle="331.188366"/>
+                </key>
+                <key id="5" time="590" spin="0">
+                    <object folder="0" file="1" x="21.693165" y="294.717495" pivot_x="0.589887" pivot_y="0.514519" angle="331.188366"/>
+                </key>
+                <key id="6" time="613" spin="0">
+                    <object folder="0" file="1" x="95.927133" y="226.889745" pivot_x="0.589887" pivot_y="0.514519" angle="331.188366"/>
+                </key>
+                <key id="7" time="647" spin="0">
+                    <object folder="0" file="1" x="48.161006" y="275.883216" pivot_x="0.589887" pivot_y="0.514519" angle="331.188366"/>
+                </key>
+                <key id="8" time="697" spin="0">
+                    <object folder="0" file="1" x="87.905389" y="206.364804" pivot_x="0.589887" pivot_y="0.514519" angle="331.188366"/>
+                </key>
+                <key id="9" time="726" spin="0">
+                    <object folder="0" file="1" x="19.348307" y="257.938515" pivot_x="0.589887" pivot_y="0.514519" angle="331.188366"/>
+                </key>
+                <key id="10" time="760">
+                    <object folder="0" file="1" x="-42.302558" y="379.604186" pivot_x="0.589887" pivot_y="0.514519" angle="331.188366"/>
+                </key>
+                <key id="11" time="853">
+                    <object folder="0" file="1" x="-29.49618" y="166.598368" pivot_x="0.589887" pivot_y="0.514519" angle="333.230314" scale_x="1" scale_y="1"/>
+                </key>
+                <key id="12" time="1000">
+                    <object folder="0" file="1" x="42.220508" y="46.841751" pivot_x="0.589887" pivot_y="0.514519" angle="83.484606" scale_x="1" scale_y="1"/>
+                </key>
+                <key id="13" time="1101" spin="-1">
+                    <object folder="0" file="1" x="40.05359" y="99.049056" pivot_x="0.589887" pivot_y="0.514519" angle="85.366541" scale_x="1" scale_y="1"/>
+                </key>
+                <key id="14" time="1497" spin="-1">
+                    <object folder="0" file="1" x="64.28828" y="33.399271" pivot_x="0.589887" pivot_y="0.514519" angle="84.200752" scale_x="1" scale_y="1"/>
+                </key>
+                <key id="15" time="1887" spin="-1">
+                    <object folder="0" file="1" x="16.413174" y="18.934443" pivot_x="0.589887" pivot_y="0.514519" angle="0.307937"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="Shaman Body_000">
+                <key id="0">
+                    <object folder="0" file="0" x="497.263158" y="29.842105"/>
+                </key>
+                <key id="1" time="196" spin="0">
+                    <object folder="0" file="0" x="470.947368" y="50.894737" angle="0"/>
+                </key>
+                <key id="2" time="401" spin="0">
+                    <object folder="0" file="0" x="567.130924" y="-28.157371" angle="0"/>
+                </key>
+                <key id="3" time="479" spin="0">
+                    <object folder="0" file="0" x="473.822425" y="32.026727" angle="0"/>
+                </key>
+                <key id="4" time="524" spin="0">
+                    <object folder="0" file="0" x="565.320741" y="-31.319858" angle="0"/>
+                </key>
+                <key id="5" time="590" spin="0">
+                    <object folder="0" file="0" x="487.463132" y="19.265845" angle="0"/>
+                </key>
+                <key id="6" time="613" spin="0">
+                    <object folder="0" file="0" x="561.697101" y="-48.561905" angle="0"/>
+                </key>
+                <key id="7" time="647" spin="0">
+                    <object folder="0" file="0" x="513.930974" y="0.431566" angle="0"/>
+                </key>
+                <key id="8" time="697" spin="0">
+                    <object folder="0" file="0" x="553.675357" y="-69.086846" angle="0"/>
+                </key>
+                <key id="9" time="726" spin="0">
+                    <object folder="0" file="0" x="485.118275" y="-17.513135" angle="0"/>
+                </key>
+                <key id="10" time="760">
+                    <object folder="0" file="0" x="423.467409" y="104.152536" angle="0"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>

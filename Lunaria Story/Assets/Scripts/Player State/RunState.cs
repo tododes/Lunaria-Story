@@ -27,6 +27,7 @@ public class RunState : IState
     }
 
     public void startAction() {
+        character.enablePlayerController();
         animator.SetBool("isRun", true);
         animator.SetBool("isIdle", false);
     }
