@@ -22,7 +22,8 @@ public class Character : MonoBehaviour {
 	void Start () {
         idle();
         body = GetComponent<Rigidbody2D>();
-        registerObserver(GameObject.Find("UI System").GetComponent<GameUIGroup>());
+        registerObserver(Camera.main.GetComponent<PlayerCamera>());
+        registerObserver(GameObject.Find("Stage Complete UI Group").GetComponent<StageCompleteUIGroup>());
 	}
 
 	void FixedUpdate () {
@@ -57,10 +58,12 @@ public class Character : MonoBehaviour {
 
     public void jump() {
         setCurrentState(new JumpState(this, attribute.jumpForce));
+        MoveNotificationToObservers();
     }
 
     public void run() {
         setCurrentState(new RunState(this, attribute.runSpeed));
+        MoveNotificationToObservers();
     }
 
     public void idle() {
@@ -92,6 +95,32 @@ public class Character : MonoBehaviour {
         for (int i = 0; i < observers.Count; i++) {
             observers[i].OnCharacterDie(this);
         }
+    }
+
+    private void MoveNotificationToObservers()
+    {
+        for (int i = 0; i < observers.Count; i++)
+        {
+            observers[i].OnCharacterMove(this);
+        }
+    }
+
+    private void DeadEndNotificationToObservers()
+    {
+        for (int i = 0; i < observers.Count; i++)
+        {
+            observers[i].OnCharacterMeetDeadEnd(this);
+        }
+    }
+
+    private void StageCompleteNotificationToObservers() {
+        for (int i = 0; i < observers.Count; i++) {
+            observers[i].OnStageCompleted(this);
+        }
+    }
+
+    public void completeStage() {
+        StageCompleteNotificationToObservers();
     }
 
     public void enablePlayerController() {

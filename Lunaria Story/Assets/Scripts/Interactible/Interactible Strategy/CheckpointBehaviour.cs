@@ -8,15 +8,20 @@ public class CheckpointBehaviour : InteractBehaviour
     private Checkpoint checkpoint;
     private List<ICheckpointObserver> observers = new List<ICheckpointObserver>();
     private bool stepped;
+    private bool shouldNotifyObservers;
 
-    public CheckpointBehaviour(Checkpoint checkpoint) {
+    public CheckpointBehaviour(Checkpoint checkpoint, bool shouldNotifyObservers) {
         this.checkpoint = checkpoint;
+        this.shouldNotifyObservers = shouldNotifyObservers;
     }
 
     public void OnStartInteract(Character character) {
         if (!stepped) {
             character.setRecentlyReachedCheckpoint(checkpoint);
-            notifyAllObservers();
+
+            if(shouldNotifyObservers)
+                notifyAllObservers();
+
             stepped = true;
         }
     }

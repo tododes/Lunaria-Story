@@ -10,6 +10,6 @@ public class CheckpointText : MovingUI {
     protected override void Initialize()
     {
         RectTransform rectTransform = GetComponent<RectTransform>();
-        setDisplayBehaviour(new InflateDeflateBehaviour(rectTransform, Vector3.one, inflateSpeedMultiplier, true));
+        setDisplayBehaviour(new InflateDeflateBehaviour(rectTransform, new Vector3(0.66f, 0.72f, 0f), inflateSpeedMultiplier, true));
     }
 }

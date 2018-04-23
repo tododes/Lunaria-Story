@@ -7,6 +7,6 @@ public class OptionUIGroup : MenuUIGroup
 {
     protected override void InitializeGroup()
     {
-        setDisplayBehaviour(new DropBehaviour(rectTransform, 0f, 600f));
+        setDisplayBehaviour(new DropBehaviour(rectTransform, 0f, 600f, 2f));
     }
 }

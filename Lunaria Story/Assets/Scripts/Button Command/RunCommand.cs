@@ -11,9 +11,8 @@ public class RunCommand : PlayerControlCommand
         this.facingAngle = facingAngle;
     }
 
-    protected override void OnExecutePlayerControlCommand()
-    {
-    
+    protected override void OnExecutePlayerControlCommand() {
+        
     }
 
     protected override void OnStartExecutePlayerControlCommand()

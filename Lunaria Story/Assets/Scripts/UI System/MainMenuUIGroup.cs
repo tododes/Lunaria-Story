@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class MainMenuUIGroup : MenuUIGroup, IRemote
 {
+    [SerializeField] private MenuController controller;
+    [SerializeField] private QuitAppDecisionUIGroup quitGroup;
+    [SerializeField] private float maxY, minY;
+
     public void registerCommandToButton(string buttonName, ICommand command)
     {
         registerCommandToButton(transform.Find(buttonName).GetComponent<CommandButton>(), command);
@@ -16,14 +20,9 @@ public class MainMenuUIGroup : MenuUIGroup, IRemote
     }
 
     protected override void InitializeGroup() {
-        setDisplayBehaviour(new DropBehaviour(rectTransform, 0f, 600f));
-
-        registerCommandToButton(
-            "Go To Option Button", 
-            new ChangeMenuCommand(
-                GameObject.Find("Main Menu Controller").GetComponent<MainMenuController>(), 
-                GameObject.Find("Option UI Group").GetComponent<OptionUIGroup>()
-            )
-        ) ;
+        setDisplayBehaviour(new DropBehaviour(rectTransform, minY, maxY, 2f));
+        registerCommandToButton("Start Game Button", new LoadSceneCommand("Scene", this));
+        registerCommandToButton("Select Stage Button", new ChangeMenuCommand(controller, GameObject.Find("Select Stage UI Group").GetComponent<SelectStageUIGroup>()));
+        registerCommandToButton("Quit Button", new ChangeMenuCommand(controller, quitGroup));
     }
 }

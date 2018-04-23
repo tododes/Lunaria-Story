@@ -19,7 +19,7 @@ public class JumpState : IState
     }
 
     public void doAction() {
-    
+
     }
 
     public void stopAction() {

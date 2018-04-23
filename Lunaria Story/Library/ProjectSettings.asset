@@ -7,7 +7,7 @@ PlayerSettings:
   productGUID: 8b9cfb6a9ec141848abd2a5d08d52a49
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 3
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -637,12 +637,13 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
+    Collab: 1
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: a2a1800a-aae0-409d-9a50-6cb0490dbe52
-  projectName: Lunaria Story (1)
-  organizationId: vinzwch13
+  cloudProjectId: c6fc2926-2032-4987-833b-98905b065934
+  projectName: Lunaria Story
+  organizationId: luminaria-story
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

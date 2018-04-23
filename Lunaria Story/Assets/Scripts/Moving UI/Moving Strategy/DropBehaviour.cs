@@ -11,11 +11,11 @@ public class DropBehaviour : IDisplayBehaviour {
     private RectTransform transform;
     private Vector3 clampedPosition;
 
-    public DropBehaviour(RectTransform transform, float minPosY, float maxPosY) {
+    public DropBehaviour(RectTransform transform, float minPosY, float maxPosY, float speedMultiplier) {
         this.transform = transform;
         this.minPosY = minPosY;
         this.maxPosY = maxPosY;
-        velocity = (maxPosY - minPosY) * 2f;
+        velocity = (maxPosY - minPosY) * speedMultiplier;
         clampedPosition = Vector3.zero;
         hide();
     }

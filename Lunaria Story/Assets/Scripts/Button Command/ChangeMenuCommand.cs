@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class ChangeMenuCommand : ICommand
 {
-    private MainMenuController controller;
+    private MenuController controller;
     private MenuUIGroup group;
 
-    public ChangeMenuCommand(MainMenuController controller, MenuUIGroup group) {
+    public ChangeMenuCommand(MenuController controller, MenuUIGroup group) {
         this.controller = controller;
         this.group = group;
     }
