@@ -10,6 +10,7 @@ public class PauseBehaviour : ModifiableDisplayBehaviour
     }
 
     public override void display() {
+        GameWorld.singleton.freeze();
         otherBehaviour.display();
     }
 

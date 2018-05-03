@@ -1,11 +1,11 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunaria Story.CSharp", "Lunaria Story.CSharp.csproj", "{9232E356-803F-11AB-8964-3506C610A164}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunaria Story", "Assembly-CSharp.csproj", "{F1F7243D-A0DC-8C23-2E76-982452618230}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunaria Story.CSharp.Plugins", "Lunaria Story.CSharp.Plugins.csproj", "{A16D881F-FCC3-9F56-5F7D-C11B5E6D185F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunaria Story", "Assembly-CSharp-firstpass.csproj", "{8FE07563-3A09-F595-3858-287631462AF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunaria Story.CSharp.Editor.Plugins", "Lunaria Story.CSharp.Editor.Plugins.csproj", "{4E968E48-11E5-6916-E8CC-47FA3A51C72A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lunaria Story", "Assembly-CSharp-Editor-firstpass.csproj", "{9BD7EE31-C8C0-D3B7-CAFB-52DAA4E843F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,20 +13,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9232E356-803F-11AB-8964-3506C610A164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9232E356-803F-11AB-8964-3506C610A164}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9232E356-803F-11AB-8964-3506C610A164}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9232E356-803F-11AB-8964-3506C610A164}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A16D881F-FCC3-9F56-5F7D-C11B5E6D185F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A16D881F-FCC3-9F56-5F7D-C11B5E6D185F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A16D881F-FCC3-9F56-5F7D-C11B5E6D185F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A16D881F-FCC3-9F56-5F7D-C11B5E6D185F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4E968E48-11E5-6916-E8CC-47FA3A51C72A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4E968E48-11E5-6916-E8CC-47FA3A51C72A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4E968E48-11E5-6916-E8CC-47FA3A51C72A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4E968E48-11E5-6916-E8CC-47FA3A51C72A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1F7243D-A0DC-8C23-2E76-982452618230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1F7243D-A0DC-8C23-2E76-982452618230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1F7243D-A0DC-8C23-2E76-982452618230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1F7243D-A0DC-8C23-2E76-982452618230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FE07563-3A09-F595-3858-287631462AF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FE07563-3A09-F595-3858-287631462AF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FE07563-3A09-F595-3858-287631462AF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FE07563-3A09-F595-3858-287631462AF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD7EE31-C8C0-D3B7-CAFB-52DAA4E843F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD7EE31-C8C0-D3B7-CAFB-52DAA4E843F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD7EE31-C8C0-D3B7-CAFB-52DAA4E843F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD7EE31-C8C0-D3B7-CAFB-52DAA4E843F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

@@ -28,7 +28,7 @@ public class SelectStageUIGroup : MenuUIGroup, IRemote
         RectTransform transform = GetComponent<RectTransform>();
         setDisplayBehaviour(new InvisibleOnHideDisplayModifier(new StageGroupSelectionModifier(new DropBehaviour(transform, minY, maxY, 2f), stageButtonGroups), transform));
 
-        registerCommandToButton("Back Button", new UnpauseGameCommand(menuController));
+        registerCommandToButton("Back Button", new CloseMenuCommand(menuController));
         registerCommandToButton("Left Arrow Button", new IncrementStageGroupIndexCommand(this, -1));
         registerCommandToButton("Right Arrow Button", new IncrementStageGroupIndexCommand(this, 1));
 

@@ -9,6 +9,7 @@ public class FireBall : Interactible
 
     protected override void Initialize() {
         interactBehaviour = new SelfDestructBehaviour(new KillingBehaviour(), gameObject);
+        collisionBehaviour = new NullCollisionBehaviour();
     }
 
     void Update() {

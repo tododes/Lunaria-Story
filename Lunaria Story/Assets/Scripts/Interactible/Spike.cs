@@ -7,6 +7,7 @@ public class Spike : Interactible {
 
     protected override void Initialize() {
         interactBehaviour = new KillingBehaviour();
+        collisionBehaviour = new NullCollisionBehaviour();
     }
 
 }

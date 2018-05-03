@@ -10,10 +10,6 @@ public class NormalEnemy : Enemy
 
     protected override void InitializeEnemy()
     {
-        setEnemyAction(new WalkAroundAction(transform, maxLeft, maxRight, speed));
-    }
-
-    protected void Update() {
-        enemyAction.doAction();
+        setEnemyAction(new WalkAroundAction(transform, maxLeft, maxRight, speed, -1f));
     }
 }

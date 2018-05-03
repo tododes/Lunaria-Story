@@ -10,15 +10,24 @@ public class RunState : IState
     private float speed;
     private Animator animator;
 
+    private Vector3 originalVelocity;
+    private Vector3 velocityAfterTimeScale;
+
+    private float originalAnimationSpeed;
+
     public RunState(Character character, float speed) {
         this.character = character;
         this.speed = speed;
         body = character.GetComponent<Rigidbody2D>();
-        animator = character.GetComponent<Animator>();
+        animator = character.GetComponent<Animator>();    
+        originalAnimationSpeed = 1f;
     }
 
     public void doAction() {
-        character.transform.Translate(Vector3.right * speed * Time.deltaTime);
+        velocityAfterTimeScale = originalVelocity * GameWorld.singleton.getTimeScale();
+        //Debug.Log(originalVelocity);
+        character.transform.Translate(velocityAfterTimeScale);
+        animator.speed = originalAnimationSpeed * GameWorld.singleton.getTimeScale();
     }
 
     public void stopAction() {
@@ -30,5 +39,6 @@ public class RunState : IState
         character.enablePlayerController();
         animator.SetBool("isRun", true);
         animator.SetBool("isIdle", false);
+        originalVelocity = Vector3.right * speed * Time.fixedDeltaTime;
     }
 }

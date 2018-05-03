@@ -5,6 +5,7 @@ using UnityEngine;
 public abstract class Interactible : MonoBehaviour {
 
     protected InteractBehaviour interactBehaviour;
+    protected ICollisionBehaviour collisionBehaviour;
 
     protected abstract void Initialize();
 
@@ -22,5 +23,17 @@ public abstract class Interactible : MonoBehaviour {
 
     public void OnInteractExit(Character character) {
         interactBehaviour.OnStopInteract(character);
+    }
+
+    public void OnStartCollision(Character character){
+        collisionBehaviour.OnCollisionEnter(character);
+    }
+
+    public void OnStayCollision(Character character){
+        collisionBehaviour.OnCollisionStay(character);
+    }
+
+    public void OnStopCollision(Character character){
+        collisionBehaviour.OnCollisionExit(character);
     }
 }

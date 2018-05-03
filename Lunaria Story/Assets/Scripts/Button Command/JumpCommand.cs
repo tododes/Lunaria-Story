@@ -17,7 +17,7 @@ public class JumpCommand : PlayerControlCommand
 
     protected override void OnStartExecutePlayerControlCommand()
     {
-        character.jump();
+        character.jump(1f);
     }
 
     protected override void OnStopExecutePlayerControlCommand()

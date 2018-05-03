@@ -13,8 +13,8 @@ public class Ground : Interactible {
         }
     }
 
-    protected override void Initialize()
-    {        
+    protected override void Initialize() {        
         interactBehaviour = new AddForceBehaviour(transform.eulerAngles.z, Mathf.Sign(transform.eulerAngles.z));
+        collisionBehaviour = new PlayerJumpResetBehaviour();
     }
 }

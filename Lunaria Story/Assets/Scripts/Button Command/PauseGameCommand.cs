@@ -19,6 +19,7 @@ public class PauseGameCommand : ICommand
 
     public void OnStartExecute() {
         controller.pushUIGroup(group);
+        GameWorld.singleton.freeze();
     }
 
     public void OnStopExecute() {

@@ -17,4 +17,8 @@ public abstract class Enemy : Interactible
     public void setEnemyAction(IEnemyAction enemyAction) {
         this.enemyAction = enemyAction;
     }
+
+    protected void Update() {
+        enemyAction.doAction();
+    }
 }

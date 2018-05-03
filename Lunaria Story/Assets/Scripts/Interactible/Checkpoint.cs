@@ -6,12 +6,14 @@ using UnityEngine;
 public class Checkpoint : Interactible {
 
     [SerializeField] private bool shouldNotifyObservers;
+    [SerializeField] private CheckpointData checkpointData;
 
     private CheckpointBehaviour checkpointBehaviour;
 
     protected override void Initialize() {
-        checkpointBehaviour = new CheckpointBehaviour(this, shouldNotifyObservers);
+        checkpointBehaviour = new CheckpointBehaviour(this, checkpointData, shouldNotifyObservers);
         interactBehaviour = checkpointBehaviour;
+        collisionBehaviour = new NullCollisionBehaviour();
 
         registerCheckpointObserver(GameObject.Find("Game UI Group").GetComponent<GameUIGroup>());
     }

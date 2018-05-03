@@ -21,7 +21,7 @@ public class MainMenuUIGroup : MenuUIGroup, IRemote
 
     protected override void InitializeGroup() {
         setDisplayBehaviour(new DropBehaviour(rectTransform, minY, maxY, 2f));
-        registerCommandToButton("Start Game Button", new LoadSceneCommand("Scene", this));
+        registerCommandToButton("Start Game Button", new LoadSceneCommand("Scene 1", this));
         registerCommandToButton("Select Stage Button", new ChangeMenuCommand(controller, GameObject.Find("Select Stage UI Group").GetComponent<SelectStageUIGroup>()));
         registerCommandToButton("Quit Button", new ChangeMenuCommand(controller, quitGroup));
     }

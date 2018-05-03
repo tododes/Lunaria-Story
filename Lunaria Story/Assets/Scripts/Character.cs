@@ -18,16 +18,19 @@ public class Character : MonoBehaviour {
     private Rigidbody2D body;
     private List<ICharacterObserver> observers = new List<ICharacterObserver>();
     private bool controllable;
+
+    private int jumpCounter;
     
 	void Start () {
         idle();
         body = GetComponent<Rigidbody2D>();
         registerObserver(Camera.main.GetComponent<PlayerCamera>());
         registerObserver(GameObject.Find("Stage Complete UI Group").GetComponent<StageCompleteUIGroup>());
+        jumpCounter = 1;
 	}
 
 	void FixedUpdate () {
-        currentState.doAction();	
+        currentState.doAction();
 	}
 
     public void setCurrentState(IState state) {
@@ -56,8 +59,40 @@ public class Character : MonoBehaviour {
         interactible.OnInteractExit(this);
     }
 
-    public void jump() {
-        setCurrentState(new JumpState(this, attribute.jumpForce));
+    protected void OnCollisionEnter2D(Collision2D coll)
+    {
+        Interactible interactible = coll.collider.GetComponent<Interactible>();
+
+        if(interactible)
+            interactible.OnStartCollision(this);
+    }
+
+    protected void OnCollisionStay2D(Collision2D coll)
+    {
+        Interactible interactible = coll.collider.GetComponent<Interactible>();
+
+        if (interactible)
+            interactible.OnStayCollision(this);
+    }
+
+    protected void OnCollisionExit2D(Collision2D coll)
+    {
+        Interactible interactible = coll.collider.GetComponent<Interactible>();
+
+        if (interactible)
+            interactible.OnStopCollision(this);
+    }
+
+    public void jump(float powerMultiplier) {
+        if (jumpCounter > 0) {
+            setCurrentState(new JumpState(this, attribute.jumpForce * powerMultiplier));
+            MoveNotificationToObservers();
+            jumpCounter--;
+        }
+    }
+
+    public void bounceJump(Vector3 bounceDirection, float powerMultiplier) {
+        setCurrentState(new JumpState(bounceDirection, this, attribute.jumpForce * powerMultiplier));
         MoveNotificationToObservers();
     }
 
@@ -77,6 +112,7 @@ public class Character : MonoBehaviour {
     public void die() {
         DieNotificationToObservers();
         setCurrentState(new DieState(this));
+        CheckpointDataLoader.singleton.unsaveCheckpointPosition();
     }
 
     public void setFacingAngle(float angle) {
@@ -121,6 +157,7 @@ public class Character : MonoBehaviour {
 
     public void completeStage() {
         StageCompleteNotificationToObservers();
+        CheckpointDataLoader.singleton.unsaveCheckpointPosition();
     }
 
     public void enablePlayerController() {
@@ -134,4 +171,12 @@ public class Character : MonoBehaviour {
     public bool isControllable() {
         return controllable;
     }
+
+    public void resetJumpCounter() {
+        jumpCounter = 1;
+    }
+
+	public void modifySpeedWithMultiplier(float speedMultiplier){
+		attribute.runSpeed *= speedMultiplier;
+	}
 }

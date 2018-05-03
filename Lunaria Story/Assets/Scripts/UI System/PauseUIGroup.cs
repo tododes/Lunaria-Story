@@ -25,7 +25,7 @@ public class PauseUIGroup : MenuUIGroup, IKeyListener, IRemote
         MenuController controller = GameObject.Find("Menu Controller").GetComponent<MenuController>();
         setDisplayBehaviour(new PauseBehaviour(new DropBehaviour(rectTransform, 0, 500f, 2f), this));
         registerKey(KeyCode.P, new PauseGameCommand(controller, this));
-        registerCommandToButton("Resume Button", new UnpauseGameCommand(controller));
+        registerCommandToButton("Resume Button", new UnpauseGameCommandModifier(new CloseMenuCommand(controller)));
         registerCommandToButton("Quit Button", new ChangeMenuCommand(menuController, decisionUIGroup));
     }
 

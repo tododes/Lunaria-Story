@@ -10,15 +10,18 @@ public class DieState : IState
     private MenuController menuController;
     private DieUIGroup dieGroup;
 
+    private float originalAnimationSpeed;
+
     public DieState(Character character) {
         this.character = character;
         animator = character.GetComponent<Animator>();
         menuController = GameObject.Find("Menu Controller").GetComponent<MenuController>();
         dieGroup = GameObject.Find("Die UI Group").GetComponent<DieUIGroup>();
+        originalAnimationSpeed = 1f;
     }
 
     public void doAction() {
-        
+        animator.speed = originalAnimationSpeed * GameWorld.singleton.getTimeScale();
     }
 
     public void startAction() {

@@ -7,5 +7,6 @@ public class FinishLine : Interactible
 {
     protected override void Initialize() {
         interactBehaviour = new StageCompleteBehaviour();
+        collisionBehaviour = new NullCollisionBehaviour();
     }
 }

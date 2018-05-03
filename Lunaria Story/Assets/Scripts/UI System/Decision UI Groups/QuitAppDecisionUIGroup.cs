@@ -10,7 +10,7 @@ public class QuitAppDecisionUIGroup : DecisionUIGroup
 
     protected override void InitializeDecisionAction() {
         yesCommand = new QuitAppCommand();
-        noCommand = new UnpauseGameCommand(menuController);
+        noCommand = new CloseMenuCommand(menuController);
 
         registerCommandToButton("Yes Button", yesCommand);
         registerCommandToButton("No Button", noCommand);

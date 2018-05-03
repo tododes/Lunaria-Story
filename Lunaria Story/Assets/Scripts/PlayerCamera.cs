@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour, ICharacterObserver
 {
+    [SerializeField] private float minX, maxX;
     [SerializeField] private Vector3 desiredPosition;
-    private float offsetX;
     private Character character;
 
     void Start() {
@@ -24,15 +24,16 @@ public class PlayerCamera : MonoBehaviour, ICharacterObserver
     }
 
     public void OnCharacterMove(Character character) {
-        offsetX = transform.position.x - character.transform.position.x;
-        this.character = character;     
+        this.character = character;
     }
 
     void Update() {
         if (character) {
-            desiredPosition.x = character.transform.position.x + offsetX;
+            desiredPosition.x = character.transform.position.x;
             desiredPosition.y = transform.position.y;
             desiredPosition.z = transform.position.z;
+
+            desiredPosition.x = Mathf.Clamp(desiredPosition.x, minX, maxX);
             transform.position = desiredPosition;
         }
 

@@ -35,6 +35,8 @@ TextureImporter:
     21300056: Platform List Used_28
     21300058: Platform List Used_29
     21300060: Platform List Used_30
+    21300062: Platform List Used_31
+    21300064: Platform List Used_32
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -551,7 +553,7 @@ TextureImporter:
         width: 52
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -565,7 +567,7 @@ TextureImporter:
         width: 53
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -578,6 +580,34 @@ TextureImporter:
         y: 514
         width: 53
         height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Platform List Used_31
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 16
+        width: 119
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Platform List Used_32
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 16
+        width: 117
+        height: 119
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

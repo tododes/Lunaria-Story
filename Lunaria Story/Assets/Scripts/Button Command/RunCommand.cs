@@ -23,6 +23,6 @@ public class RunCommand : PlayerControlCommand
 
     protected override void OnStopExecutePlayerControlCommand()
     {
-        character.doNothing();
+        character.idle();
     }
 }

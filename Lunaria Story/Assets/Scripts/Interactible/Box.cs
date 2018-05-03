@@ -6,6 +6,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Box : Interactible, IFallGroundAction
 {
+	[SerializeField] private bool canDrop;
+
     private Rigidbody2D body;
 
     public void OnTouchGround() {
@@ -16,6 +18,7 @@ public class Box : Interactible, IFallGroundAction
     protected override void Initialize()
     {
         body = GetComponent<Rigidbody2D>();
-        interactBehaviour = new BoxBehaviour(this);
+        interactBehaviour = new BoxBehaviour(this, canDrop);
+        collisionBehaviour = new PlayerJumpResetBehaviour();
     }
 }

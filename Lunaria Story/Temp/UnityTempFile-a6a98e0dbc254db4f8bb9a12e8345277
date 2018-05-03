@@ -1,0 +1,307 @@
+-debug
+-target:library
+-nowarn:0169
+-langversion:4
+-out:Temp/Assembly-CSharp.dll
+-unsafe
+-r:Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PhysicsModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VehiclesModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AnimationModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.IMGUIModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UNETModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.DirectorModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WebModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ARModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VRModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UIElementsModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.StyleSheetsModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AudioModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GameCenterModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.GridModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.InputModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ParticlesLegacyModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.Physics2DModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TerrainModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.TilemapModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll"
+-r:Library/FacebookSDK/Facebook.Unity.Settings.dll
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Timeline/Editor/UnityEditor.Timeline.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UIAutomation/Editor/UnityEditor.UIAutomation.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/Editor/UnityEditor.GoogleAudioSpatializer.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/Editor/UnityEditor.SpatialTracking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll"
+-r:"C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll"
+-r:"C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.WSA.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll"
+-r:"C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/2015/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll"
+-r:C:/Users/GX60/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll
+-r:C:/Users/GX60/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/Editor/UnityEditor.Advertisements.dll
+-r:C:/Users/GX60/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll
+-r:C:/Users/GX60/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/Editor/UnityEditor.Analytics.dll
+-r:C:/Users/GX60/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll
+-r:C:/Users/GX60/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/Editor/UnityEditor.Purchasing.dll
+-r:C:/Users/GX60/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll"
+-r:"C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Common.dll"
+-define:UNITY_5_3_OR_NEWER
+-define:UNITY_5_4_OR_NEWER
+-define:UNITY_5_5_OR_NEWER
+-define:UNITY_5_6_OR_NEWER
+-define:UNITY_2017_1_OR_NEWER
+-define:UNITY_2017_2_OR_NEWER
+-define:UNITY_2017_3_OR_NEWER
+-define:UNITY_2017_3_1
+-define:UNITY_2017_3
+-define:UNITY_2017
+-define:UNITY_ANALYTICS
+-define:ENABLE_AUDIO
+-define:ENABLE_CACHING
+-define:ENABLE_CLOTH
+-define:ENABLE_GENERICS
+-define:ENABLE_PVR_GI
+-define:ENABLE_MICROPHONE
+-define:ENABLE_MULTIPLE_DISPLAYS
+-define:ENABLE_PHYSICS
+-define:ENABLE_SPRITERENDERER_FLIPPING
+-define:ENABLE_SPRITES
+-define:ENABLE_GRID
+-define:ENABLE_TILEMAP
+-define:ENABLE_TERRAIN
+-define:ENABLE_RAKNET
+-define:ENABLE_DIRECTOR
+-define:ENABLE_UNET
+-define:ENABLE_LZMA
+-define:ENABLE_UNITYEVENTS
+-define:ENABLE_WEBCAM
+-define:ENABLE_WWW
+-define:ENABLE_CLOUD_SERVICES_COLLAB
+-define:ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS
+-define:ENABLE_CLOUD_SERVICES_ADS
+-define:ENABLE_CLOUD_HUB
+-define:ENABLE_CLOUD_PROJECT_ID
+-define:ENABLE_CLOUD_SERVICES_USE_WEBREQUEST
+-define:ENABLE_CLOUD_SERVICES_UNET
+-define:ENABLE_CLOUD_SERVICES_BUILD
+-define:ENABLE_CLOUD_LICENSE
+-define:ENABLE_EDITOR_HUB
+-define:ENABLE_EDITOR_HUB_LICENSE
+-define:ENABLE_WEBSOCKET_CLIENT
+-define:ENABLE_DIRECTOR_AUDIO
+-define:ENABLE_DIRECTOR_TEXTURE
+-define:ENABLE_TIMELINE
+-define:ENABLE_EDITOR_METRICS
+-define:ENABLE_EDITOR_METRICS_CACHING
+-define:ENABLE_NATIVE_ARRAY
+-define:ENABLE_SPRITE_MASKING
+-define:INCLUDE_DYNAMIC_GI
+-define:INCLUDE_GI
+-define:ENABLE_MONO_BDWGC
+-define:PLATFORM_SUPPORTS_MONO
+-define:INCLUDE_PUBNUB
+-define:ENABLE_PLAYMODE_TESTS_RUNNER
+-define:ENABLE_VIDEO
+-define:ENABLE_RMGUI
+-define:ENABLE_PACKMAN
+-define:ENABLE_CUSTOM_RENDER_TEXTURE
+-define:ENABLE_STYLE_SHEETS
+-define:ENABLE_LOCALIZATION
+-define:PLATFORM_ANDROID
+-define:UNITY_ANDROID
+-define:UNITY_ANDROID_API
+-define:ENABLE_SUBSTANCE
+-define:ENABLE_EGL
+-define:ENABLE_NETWORK
+-define:ENABLE_RUNTIME_GI
+-define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
+-define:ENABLE_UNITYWEBREQUEST
+-define:ENABLE_CLOUD_SERVICES
+-define:ENABLE_CLOUD_SERVICES_ANALYTICS
+-define:ENABLE_EVENT_QUEUE
+-define:ENABLE_CLOUD_SERVICES_PURCHASING
+-define:ENABLE_CLOUD_SERVICES_CRASH_REPORTING
+-define:ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING
+-define:PLATFORM_SUPPORTS_ADS_ID
+-define:UNITY_CAN_SHOW_SPLASH_SCREEN
+-define:ENABLE_VR
+-define:ENABLE_AR
+-define:ENABLE_SPATIALTRACKING
+-define:ENABLE_UNITYADS_RUNTIME
+-define:UNITY_UNITYADS_API
+-define:ENABLE_MONO
+-define:NET_2_0_SUBSET
+-define:ENABLE_PROFILER
+-define:DEBUG
+-define:TRACE
+-define:UNITY_ASSERTIONS
+-define:UNITY_EDITOR
+-define:UNITY_EDITOR_64
+-define:UNITY_EDITOR_WIN
+-define:ENABLE_NATIVE_ARRAY_CHECKS
+-define:UNITY_TEAM_LICENSE
+-define:ENABLE_VSTU
+-define:CROSS_PLATFORM_INPUT
+-define:MOBILE_INPUT
+-define:UNITY_HAS_GOOGLEVR
+-define:UNITY_HAS_TANGO
+"Assets/Scripts/Button Command/ChangeMenuCommand.cs"
+"Assets/Scripts/Button Command/CloseMenuCommand.cs"
+"Assets/Scripts/Button Command/ICommand.cs"
+"Assets/Scripts/Button Command/JumpCommand.cs"
+"Assets/Scripts/Button Command/LoadSceneCommand.cs"
+"Assets/Scripts/Button Command/ModifiableCommand.cs"
+"Assets/Scripts/Button Command/PauseGameCommand.cs"
+"Assets/Scripts/Button Command/PlayerControlCommand.cs"
+"Assets/Scripts/Button Command/QuitAppCommand.cs"
+"Assets/Scripts/Button Command/Remote/CommandButton.cs"
+"Assets/Scripts/Button Command/Remote/IRemote.cs"
+"Assets/Scripts/Button Command/Remote/UIRemote.cs"
+"Assets/Scripts/Button Command/RunCommand.cs"
+"Assets/Scripts/Button Command/SelectStageGroupCommand.cs"
+"Assets/Scripts/Button Command/UnpauseGameCommandModifier.cs"
+"Assets/Scripts/Character Observer/ICharacterObserver.cs"
+Assets/Scripts/Character.cs
+"Assets/Scripts/Checkpoint Observer/ICheckpointObserver.cs"
+Assets/Scripts/CheckpointData.cs
+Assets/Scripts/CheckpointDataLoader.cs
+"Assets/Scripts/Enemy Movemen Strategy/DescendEnemyAction.cs"
+"Assets/Scripts/Enemy Movemen Strategy/IEnemyAction.cs"
+"Assets/Scripts/Enemy Movemen Strategy/ModifiableEnemyAction.cs"
+"Assets/Scripts/Enemy Movemen Strategy/NullEnemyAction.cs"
+"Assets/Scripts/Enemy Movemen Strategy/SinudialMoveAction.cs"
+"Assets/Scripts/Enemy Movemen Strategy/WalkAroundAction.cs"
+Assets/Scripts/Enemy/Enemy.cs
+Assets/Scripts/Enemy/Ghost.cs
+Assets/Scripts/Enemy/NormalEnemy.cs
+Assets/Scripts/GameWorld.cs
+Assets/Scripts/Ground.cs
+Assets/Scripts/Interactible/Box.cs
+Assets/Scripts/Interactible/Chasm.cs
+Assets/Scripts/Interactible/Checkpoint.cs
+Assets/Scripts/Interactible/CollisionStrategy/AnimateSpriteSheetBehaviour.cs
+Assets/Scripts/Interactible/CollisionStrategy/ICollisionBehaviour.cs
+Assets/Scripts/Interactible/CollisionStrategy/ModifiableCollisionBehaviour.cs
+Assets/Scripts/Interactible/CollisionStrategy/NullCollisionBehaviour.cs
+Assets/Scripts/Interactible/CollisionStrategy/PlayerJumpResetBehaviour.cs
+Assets/Scripts/Interactible/CollisionStrategy/TrampolineBehaviour.cs
+Assets/Scripts/Interactible/DestroyedTree.cs
+Assets/Scripts/Interactible/FinishLine.cs
+Assets/Scripts/Interactible/FireBall.cs
+Assets/Scripts/Interactible/Gear.cs
+Assets/Scripts/Interactible/GearTrigger.cs
+"Assets/Scripts/Interactible/Interactible Strategy/AddForceBehaviour.cs"
+"Assets/Scripts/Interactible/Interactible Strategy/BoxBehaviour.cs"
+"Assets/Scripts/Interactible/Interactible Strategy/CheckpointBehaviour.cs"
+"Assets/Scripts/Interactible/Interactible Strategy/GearTriggerBehaviour.cs"
+"Assets/Scripts/Interactible/Interactible Strategy/InteractBehaviour.cs"
+"Assets/Scripts/Interactible/Interactible Strategy/KillingBehaviour.cs"
+"Assets/Scripts/Interactible/Interactible Strategy/ModifiableInteractBehaviour.cs"
+"Assets/Scripts/Interactible/Interactible Strategy/SelfDestructBehaviour.cs"
+"Assets/Scripts/Interactible/Interactible Strategy/StageCompleteBehaviour.cs"
+"Assets/Scripts/Interactible/Interactible Strategy/TriggerMovingSpikeBehaviour.cs"
+Assets/Scripts/Interactible/Interactible.cs
+Assets/Scripts/Interactible/Mushroom.cs
+Assets/Scripts/Interactible/RedMushroom.cs
+Assets/Scripts/Interactible/Spike.cs
+Assets/Scripts/Interactible/Tornado.cs
+Assets/Scripts/Interactible/TriggerStone.cs
+"Assets/Scripts/Key Listener/IKeyListener.cs"
+Assets/Scripts/MenuController.cs
+"Assets/Scripts/Moving UI/CheckpointText.cs"
+"Assets/Scripts/Moving UI/DieText.cs"
+"Assets/Scripts/Moving UI/Moving Strategy/DropBehaviour.cs"
+"Assets/Scripts/Moving UI/Moving Strategy/IDisplayBehaviour.cs"
+"Assets/Scripts/Moving UI/Moving Strategy/InflateDeflateBehaviour.cs"
+"Assets/Scripts/Moving UI/Moving Strategy/InvisibleOnHideDisplayModifier.cs"
+"Assets/Scripts/Moving UI/Moving Strategy/ModifiableDisplayBehaviour.cs"
+"Assets/Scripts/Moving UI/Moving Strategy/NullBehaviour.cs"
+"Assets/Scripts/Moving UI/Moving Strategy/PauseBehaviour.cs"
+"Assets/Scripts/Moving UI/Moving Strategy/StageGroupSelectionModifier.cs"
+"Assets/Scripts/Moving UI/Moving Strategy/VisibilityBehaviour.cs"
+"Assets/Scripts/Moving UI/MovingUI.cs"
+Assets/Scripts/MovingSpike.cs
+"Assets/Scripts/On Fall ground Action/IFallGroundAction.cs"
+"Assets/Scripts/Player State/DieState.cs"
+"Assets/Scripts/Player State/IdleState.cs"
+"Assets/Scripts/Player State/IState.cs"
+"Assets/Scripts/Player State/JumpState.cs"
+"Assets/Scripts/Player State/NullState.cs"
+"Assets/Scripts/Player State/RunState.cs"
+Assets/Scripts/PlayerCamera.cs
+"Assets/Scripts/Save Game Action/CheckpointPlacementAction.cs"
+"Assets/Scripts/Save Game Action/ISaveAction.cs"
+"Assets/Scripts/Save Game Action/NullSaveAction.cs"
+Assets/Scripts/ScriptableObjectGenerator.cs
+"Assets/Scripts/Spritesheet Animation/SpriteSheetAnimation.cs"
+Assets/Scripts/Stack/Stack.cs
+"Assets/Scripts/Stage Selection Group Observer/IStageSelectionObserver.cs"
+"Assets/Scripts/Stage Selection Group Observer/LeftArrowButton.cs"
+"Assets/Scripts/Stage Selection Group Observer/RightArrowButton.cs"
+"Assets/Scripts/UI System/Decision UI Groups/DecisionUIGroup.cs"
+"Assets/Scripts/UI System/Decision UI Groups/LoadSceneDecisionUIGroup.cs"
+"Assets/Scripts/UI System/Decision UI Groups/QuitAppDecisionUIGroup.cs"
+"Assets/Scripts/UI System/DieUIGroup.cs"
+"Assets/Scripts/UI System/GameUIGroup.cs"
+"Assets/Scripts/UI System/IncrementStageGroupIndexCommand.cs"
+"Assets/Scripts/UI System/LoadingSceneUIGroup.cs"
+"Assets/Scripts/UI System/MainMenuUIGroup.cs"
+"Assets/Scripts/UI System/MenuUIGroup.cs"
+"Assets/Scripts/UI System/OptionUIGroup.cs"
+"Assets/Scripts/UI System/PauseUIGroup.cs"
+"Assets/Scripts/UI System/SelectStageUIGroup.cs"
+"Assets/Scripts/UI System/StageButtonUIGroup.cs"
+"Assets/Scripts/UI System/StageCompleteUIGroup.cs"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Runtime.Serialization.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.Linq.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\UnityScript.Lang.dll"
+-r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\Boo.Lang.dll"
+-sdk:unity

@@ -9,7 +9,7 @@ public class LoadSceneDecisionUIGroup : DecisionUIGroup
 
     protected override void InitializeDecisionAction() {
         yesCommand = new LoadSceneCommand("Main Menu", this);
-        noCommand = new UnpauseGameCommand(menuController);
+        noCommand = new CloseMenuCommand(menuController);
         registerCommandToButton("Yes Button", yesCommand);
         registerCommandToButton("No Button", noCommand);
     }
